@@ -1,0 +1,22 @@
+.heading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading_conteudo {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading a {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  color: var(--corLogo);
+}

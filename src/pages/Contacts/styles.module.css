@@ -1,0 +1,83 @@
+.contact {
+  border: 1px solid black;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+}
+
+.contact_cards {
+  width: 60%;
+}
+.contact_info {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 10rem;
+  text-align: center;
+}
+
+.contact_info h1 {
+  margin-bottom: 5rem;
+}
+
+.contact form {
+  display: flex;
+  flex-flow: column;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  padding: 5px 0;
+}
+
+input:focus,
+textarea:focus {
+  border-bottom-color: #007bff;
+}
+
+.contact_inputs {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.card_input {
+  display: flex;
+  flex-flow: column;
+  width: 50%;
+  margin-bottom: 5rem;
+}
+
+.card_input input {
+  padding: 1rem 0;
+
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+.button {
+  padding: 2rem;
+  width: 40%;
+  font-size: 1.6rem;
+}
+
+.textarea_div {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.textarea_div textarea {
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+.button_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

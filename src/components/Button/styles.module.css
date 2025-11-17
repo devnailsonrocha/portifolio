@@ -1,0 +1,32 @@
+.menuToggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menuToggle span {
+  display: block;
+  height: 4px;
+  background-color: var(--corBotao);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Animação para virar X */
+.menuToggle.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menuToggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menuToggle.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}

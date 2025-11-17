@@ -1,0 +1,80 @@
+:root {
+  --espacamento-texto: 0.5rem;
+  --caixa-link: 10rem;
+
+  --brecha-hover: 1rem;
+
+  --preenchimento-texto: 1rem;
+  --preenchimento-caixa: 2.5rem;
+  --preenchimento-top: 5rem;
+  --preenchimento-lista: 0.5rem;
+  --transition-duration: 0.5s;
+
+  --tamanho-link: 200px;
+
+  /*Titulos*/
+
+  --tamanho-titulo: 4rem;
+  --corTitulo: #1c1c1c;
+
+  /*Textos*/
+
+  --corTexto: #333333;
+
+  /*Label*/
+
+  /*Icones*/
+
+  --tamanho-icone: 3rem;
+  --corIcone: #2e2e2e;
+
+  /*Logo*/
+
+  --corLogo: #2e2e2e;
+  --tamanho: 3rem;
+
+  /*Bordas*/
+
+  --borda: 1px;
+  --corBorda: #777777;
+
+  /*Margem*/
+
+  --margem-container: 5rem;
+  --margem-inferior: 10rem;
+
+  /*Espaçamemto*/
+
+  --espacamento: 2.5rem;
+  --espacamentoMinino: 1px;
+
+  /*Preenchimento*/
+
+  --preenchimentoInferior: 0.5rem;
+  --preenchimentoSuperior: 1rem;
+  --preenchimentoEsquerdo: 0.5rem;
+  --preenchimentoDireito: 0.5rem;
+  --preenchimento: 0.5rem;
+
+  /*Brecha*/
+
+  --brecha: 2.5rem;
+  --brechaCurta: 0.5rem;
+
+  /*Botões*/
+
+  --corBotao: #555555;
+  --corBtn: #b1b1b1;
+
+  /*Fundo*/
+
+  --fundo: #fafafa;
+  --fundoForm: #fafafa;
+  --fundoBotao: #333333;
+
+  /*Links*/
+
+  --corLink: #555555;
+  --corLinkVitae: #333333;
+  --corLinkHover: #010101;
+}
