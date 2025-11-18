@@ -1,6 +1,9 @@
 /* --- ÍCONES SOCIAIS --- */
 .navbar {
   height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: none;
@@ -116,21 +119,13 @@
   inset-block-start: 0;
 }
 
-@media screen and (max-width: 1024px) {
-  .navbar {
-    max-height: 50vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .navbar {
     max-height: 50vh;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    border: 1px solid red;
   }
 }
 
