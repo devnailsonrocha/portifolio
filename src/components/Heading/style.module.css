@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  padding: 2.5rem;
   align-items: center;
 }
 
@@ -14,9 +15,14 @@
 
 .heading a {
   text-decoration: none;
+  color: var(--corLogo);
 }
 
-.logo {
-  display: flex;
-  color: var(--corLogo);
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 480px) {
 }

@@ -5,16 +5,14 @@
   align-items: center;
   justify-content: center;
   flex-flow: column;
-  overflow-y: auto; /* scroll só se necessário */
+  overflow-y: auto;
   overflow-x: hidden;
-
-  /* Esconde a barra de rolagem no Chrome, Edge e Safari */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE 10+ */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .navbar::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Edge */
+  display: none;
 }
 
 .nav {
@@ -51,7 +49,6 @@
   flex-flow: wrap;
   gap: 1rem;
   list-style: none;
-  /* Mantenha esta margem ou ajuste onde for usar o componente */
   margin-block-start: 4rem;
 }
 
@@ -60,7 +57,6 @@
   flex-basis: 4.5rem;
 }
 
-/* Tooltip (o pseudo-elemento ::after do li) */
 .social li::after {
   position: absolute;
   content: attr(data-tooltip);
@@ -70,7 +66,6 @@
   padding: 0.25rem 0.75rem;
   font-size: 0.875rem;
   color: #fff;
-  /* Utiliza a variável --bg */
   background: var(--bg, #070707);
   border-radius: 0.25rem;
   opacity: 0;
@@ -80,14 +75,12 @@
     visibility 0.3s ease-in-out, opacity 0.2s ease-in-out;
 }
 
-/* Tooltip hover/focus */
 .social li:has(a:hover, a:focus-visible)::after {
   opacity: 1;
   visibility: visible;
   inset-block-start: -60%;
 }
 
-/* Link (a) */
 .social a {
   position: relative;
   display: flex;
@@ -104,24 +97,20 @@
   transition: color 0.3s ease-in-out;
 }
 
-/* Classe aplicada ao ícone SVG pelo React (importante!) */
 .socialIcon {
   position: relative;
   z-index: 1;
 }
 
-/* Efeito de preenchimento (o pseudo-elemento ::after do a) */
 .social a::after {
   position: absolute;
   content: "";
   inset: 100% 0 0;
-  /* Utiliza a variável --bg */
   background: var(--bg, #070707);
   pointer-events: none;
   transition: inset 0.3s ease-in-out;
 }
 
-/* Efeito de cor e preenchimento ao hover/focus */
 .social a:hover,
 .social a:focus-visible {
   color: #fff;
@@ -130,4 +119,22 @@
 .social a:hover::after,
 .social a:focus-visible::after {
   inset-block-start: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .navbar {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    height: 60vh;
+  }
 }

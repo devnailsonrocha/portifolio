@@ -7,7 +7,7 @@ export function Heading() {
     <div className={styles.heading}>
       <div className={styles.heading_conteudo}>
         <Link to="/">
-          <h1 className={styles.logo}>NARO</h1>
+          <h1>NARO</h1>
         </Link>
 
         <div className={styles.heading_envelopa}>
