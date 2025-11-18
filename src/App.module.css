@@ -16,6 +16,10 @@
   outline: none;
 }
 
+.containerBotao {
+  padding: 0rem 0rem 2.5rem 0rem;
+}
+
 .button {
   padding: 0;
   cursor: pointer;

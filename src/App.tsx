@@ -24,7 +24,7 @@ function App() {
         </Container>
 
         {/* 👉 Botão fixo no canto inferior esquerdo */}
-        <div className={styles.heading_contato}>
+        <div className={styles.containerBotao}>
           <button
             onClick={() => setIsFormOpen(true)}
             className={styles.contact_button}
