@@ -1,10 +1,6 @@
 /* --- ÍCONES SOCIAIS --- */
 .navbar {
   height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column;
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: none;
@@ -18,13 +14,12 @@
 .nav {
   display: flex;
   flex-flow: column;
-  gap: 2.5rem;
+  gap: var(--brecha);
 }
 
 .secao {
   display: flex;
   flex-flow: column;
-  gap: 2;
 }
 
 .secao h1 {
@@ -121,44 +116,29 @@
   inset-block-start: 0;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
   .navbar {
+    max-height: 50vh;
     display: flex;
-    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 60vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
   }
 }
 
 @media screen and (max-width: 767px) {
   .navbar {
+    max-height: 50vh;
     display: flex;
-    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 60vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
   }
 }
 
 @media screen and (max-width: 480px) {
   .navbar {
+    max-height: 50vh;
     display: flex;
-    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 60vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
   }
 }

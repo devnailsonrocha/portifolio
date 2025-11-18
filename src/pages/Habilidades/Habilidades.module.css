@@ -14,6 +14,7 @@
   display: flex;
   flex-flow: column;
   gap: 2.5rem;
+  padding: 2.5rem 0;
 }
 
 .introducao h1 {
@@ -70,11 +71,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 60vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
   }
 }
 
@@ -84,11 +80,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 60vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
   }
 }
 
@@ -98,10 +89,5 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 60vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
   }
 }

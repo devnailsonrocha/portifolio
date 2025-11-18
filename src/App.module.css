@@ -1,5 +1,5 @@
 .app {
-  height: auto;
+  height: 100vh;
   display: flex;
   flex-flow: column;
 }
@@ -17,7 +17,11 @@
 }
 
 .containerBotao {
-  padding: 0rem 0rem 2.5rem 0rem;
+  position: fixed; /* sai do fluxo flex e fica fixo */
+  bottom: 2.5rem; /* distância do fundo */
+  right: 1rem; /* distância da esquerda */
+  width: auto;
+  height: auto; /* altura só do conteúdo */
 }
 
 .button {
@@ -29,5 +33,5 @@
   font-size: var(--tamanho);
   color: var(--corIcone);
   display: flex;
-  margin-right: 4rem;
+  margin-right: 3rem;
 }
