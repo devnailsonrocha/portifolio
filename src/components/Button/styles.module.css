@@ -3,8 +3,8 @@
   border: none;
   cursor: pointer;
   padding: 0;
-  width: 30px;
-  height: 20px;
+  width: 20px;
+  height: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -12,7 +12,7 @@
 
 .menuToggle span {
   display: block;
-  height: 4px;
+  height: 2px;
   background-color: var(--corBotao);
   border-radius: 2px;
   transition: all 0.3s ease;
@@ -20,7 +20,7 @@
 
 /* Animação para virar X */
 .menuToggle.open span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(0px, 0px);
 }
 
 .menuToggle.open span:nth-child(2) {

@@ -18,12 +18,16 @@ function App() {
   return (
     <BrowserRouter>
       <div className={styles.app}>
-        <Heading />
-        <Container>
-          <Rota />
-        </Container>
+        <div>
+          <Heading />
+        </div>
 
-        {/* 👉 Botão fixo no canto inferior esquerdo */}
+        <div>
+          <Container>
+            <Rota />
+          </Container>
+        </div>
+
         <div className={styles.containerBotao}>
           <button
             onClick={() => setIsFormOpen(true)}

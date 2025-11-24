@@ -1,31 +1,19 @@
-.heading {
-  width: 100%;
+.topo {
+  height: 150px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  padding: 2.5rem;
-  align-items: center;
 }
 
 .heading_conteudo {
+  height: 100px;
   width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.heading a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.topo a {
   text-decoration: none;
   color: var(--corLogo);
-}
-
-@media screen and (max-width: 1024px) {
-}
-
-@media screen and (max-width: 767px) {
-}
-
-@media screen and (max-width: 480px) {
 }

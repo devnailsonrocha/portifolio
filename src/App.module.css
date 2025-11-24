@@ -1,14 +1,17 @@
 .app {
+  width: 100%;
   height: 100vh;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
+}
+
+.containerBotao {
+  position: fixed;
+  bottom: 3rem;
+  right: 0;
 }
 
 .contact_button {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
   color: var(--color-heading);
   cursor: pointer;
   background: none;
@@ -16,16 +19,7 @@
   outline: none;
 }
 
-.containerBotao {
-  position: fixed; /* sai do fluxo flex e fica fixo */
-  bottom: 2.5rem; /* distância do fundo */
-  right: 1rem; /* distância da esquerda */
-  width: auto;
-  height: auto; /* altura só do conteúdo */
-}
-
 .button {
-  padding: 0;
   cursor: pointer;
 }
 

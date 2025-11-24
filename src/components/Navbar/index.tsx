@@ -36,37 +36,31 @@ const socialData: SocialIcon[] = [
 export function Navbar() {
   return (
     <div className={styles.navbar}>
-      {/* <div className={styles.secao}>
-        <img className={styles.vetor} src={Vetor} alt="Vetor de um dev" />
-      </div> */}
-
-      <div className={`${styles.nav}`}>
-        <div className={styles.secao}>
-          <h1>MEUS PROJETOS, HABILIDADES E EXPERIÊNCIAS</h1>
-          <p>
-            Descubra como aplico criatividade e técnica para construir soluções
-            digitais. Explore os projetos que já desenvolvi e as ferramentas que
-            domino.
-          </p>
-        </div>
-
-        <ul className={styles.social}>
-          {socialData.map((iconData, index) => {
-            const Icon = iconData.IconComponent;
-            return (
-              <li
-                key={index}
-                data-tooltip={iconData.tooltip}
-                style={{ "--bg": iconData.bgColor } as React.CSSProperties}
-              >
-                <Link to={iconData.url} aria-label={iconData.tooltip}>
-                  <Icon className={styles.socialIcon} />
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
+      <div className={styles.secao}>
+        <h1>MEUS PROJETOS, HABILIDADES E EXPERIÊNCIAS</h1>
+        <p>
+          Descubra como aplico criatividade e técnica para construir soluções
+          digitais. Explore os projetos que já desenvolvi e as ferramentas que
+          domino.
+        </p>
       </div>
+
+      <ul className={styles.social}>
+        {socialData.map((iconData, index) => {
+          const Icon = iconData.IconComponent;
+          return (
+            <li
+              key={index}
+              data-tooltip={iconData.tooltip}
+              style={{ "--bg": iconData.bgColor } as React.CSSProperties}
+            >
+              <Link to={iconData.url} aria-label={iconData.tooltip}>
+                <Icon className={styles.socialIcon} />
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }

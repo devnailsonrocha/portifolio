@@ -1,23 +1,5 @@
-/* --- ÍCONES SOCIAIS --- */
-.navbar {
-  height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow-y: auto;
-  overflow-x: hidden;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
 .navbar::-webkit-scrollbar {
   display: none;
-}
-
-.nav {
-  display: flex;
-  flex-flow: column;
-  gap: var(--brecha);
 }
 
 .secao {
@@ -33,12 +15,8 @@
 }
 
 .secao p {
-  padding-top: 1rem;
+  padding-top: var(--preenchimentoSuperior);
   color: var(--corTexto);
-}
-
-.vetor {
-  width: 30rem;
 }
 
 .social {
@@ -117,22 +95,4 @@
 .social a:hover::after,
 .social a:focus-visible::after {
   inset-block-start: 0;
-}
-
-@media screen and (max-width: 767px) {
-  .navbar {
-    max-height: 50vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .navbar {
-    max-height: 50vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
 }

@@ -1,4 +1,5 @@
 /* Overlay e modal */
+/* Overlay e modal */
 .overlay {
   position: fixed;
   top: 0;
@@ -19,7 +20,13 @@
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  position: absolute;
+  position: fixed; /* fixo na tela */
+  top: 50%; /* centraliza verticalmente */
+  left: 50%; /* centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* ajuste fino para centro */
+  max-height: 90vh; /* nunca ultrapassa a altura da tela */
+  overflow-y: auto; /* se o conteúdo for maior, cria scroll interno */
+  border-radius: 8px;
 }
 
 /* Botão de fechar */

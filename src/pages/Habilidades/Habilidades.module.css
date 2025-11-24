@@ -1,20 +1,10 @@
 .habilidades {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 60vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.habilidades_container {
-  display: flex;
-  flex-flow: column;
-  gap: 2.5rem;
-  padding: 2.5rem 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5rem;
+  padding: 5rem 0;
 }
 
 .introducao h1 {
@@ -28,18 +18,18 @@
   color: var(--corTexto);
 }
 
-.box {
+.lista {
   display: flex;
   gap: 2.5rem;
   flex-flow: column;
 }
 
-.box p {
+.lista p {
   font-weight: bold;
   color: var(--corTitulo);
 }
 
-.box ul {
+.lista ul {
   display: flex;
   flex-flow: wrap;
   gap: 2.5rem;
@@ -63,31 +53,4 @@
 
 .curriculo:hover {
   color: var(--corLinkHover);
-}
-
-@media screen and (max-width: 1024px) {
-  .habilidades {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .habilidades {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .habilidades {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
 }

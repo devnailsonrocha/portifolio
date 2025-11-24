@@ -2,7 +2,7 @@
 
 .social {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-flow: wrap;
   gap: 1rem;
   list-style: none;

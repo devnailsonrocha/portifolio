@@ -4,7 +4,7 @@ import { Button } from "../Button";
 
 export function Heading() {
   return (
-    <div className={styles.heading}>
+    <div className={styles.topo}>
       <div className={styles.heading_conteudo}>
         <Link to="/">
           <h1>NARO</h1>

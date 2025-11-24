@@ -1,24 +1,36 @@
 .contact {
-  border: 1px solid black;
-  width: 70%;
+  position: fixed; /* prende na tela */
+  top: 80px; /* começa logo abaixo do header fixo */
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 80px); /* ocupa o espaço restante da tela */
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5rem 0;
+  overflow: hidden; /* impede scroll, conteúdo não se move */
+  border: 1px solid black;
 }
 
 .contact_cards {
   width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .contact_info {
   display: flex;
   flex-flow: column;
-  margin-bottom: 10rem;
+  margin-bottom: 4rem; /* reduzido para caber melhor */
   text-align: center;
 }
 
 .contact_info h1 {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
+}
+
+.contact_form {
+  width: 100%;
 }
 
 .contact form {
@@ -50,25 +62,24 @@ textarea:focus {
   display: flex;
   flex-flow: column;
   width: 50%;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 .card_input input {
   padding: 1rem 0;
-
   font-size: 1.6rem;
   width: 100%;
 }
 
 .button {
-  padding: 2rem;
+  padding: 1rem;
   width: 40%;
   font-size: 1.6rem;
 }
 
 .textarea_div {
   width: 100%;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 .textarea_div textarea {
