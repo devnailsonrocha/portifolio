@@ -13,7 +13,29 @@
   align-items: center;
 }
 
+.heading_conteudo h1 {
+  font-size: var(--tamanho-titulo);
+}
+
 .topo a {
   text-decoration: none;
   color: var(--corLogo);
+}
+
+@media (max-width: 480px) {
+  .heading_conteudo h1 {
+    font-size: var(--tamanho-titulo-mobile);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .heading_conteudo h1 {
+    font-size: var(--tamanho-titulo-tablet);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .heading_conteudo h1 {
+    font-size: var(--tamanho-titulo);
+  }
 }

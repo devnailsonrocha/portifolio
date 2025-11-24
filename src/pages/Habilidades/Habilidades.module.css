@@ -4,7 +4,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   gap: 5rem;
-  padding: 5rem 0;
+  padding: 2.5rem 0;
 }
 
 .introducao h1 {
@@ -53,4 +53,22 @@
 
 .curriculo:hover {
   color: var(--corLinkHover);
+}
+
+@media (max-width: 480px) {
+  .introducao h1 {
+    font-size: var(--tamanho-titulo-mobile);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .introducao h1 {
+    font-size: var(--tamanho-titulo-tablet);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .introducao h1 {
+    font-size: var(--tamanho-titulo);
+  }
 }

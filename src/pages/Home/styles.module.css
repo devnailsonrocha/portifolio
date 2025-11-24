@@ -38,3 +38,21 @@
 .si {
   width: 80%;
 }
+
+@media (max-width: 480px) {
+  .home_banner h1 {
+    font-size: var(--tamanho-titulo-mobile);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .home_banner h1 {
+    font-size: var(--tamanho-titulo-tablet);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .home_banner h1 {
+    font-size: var(--tamanho-titulo);
+  }
+}

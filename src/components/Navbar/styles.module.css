@@ -96,3 +96,21 @@
 .social a:focus-visible::after {
   inset-block-start: 0;
 }
+
+@media (max-width: 480px) {
+  .secao h1 {
+    font-size: var(--tamanho-titulo-mobile);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .secao h1 {
+    font-size: var(--tamanho-titulo-tablet);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .secao h1 {
+    font-size: var(--tamanho-titulo);
+  }
+}

@@ -134,31 +134,38 @@
 
 /* Responsividade */
 
-@media screen and (max-width: 600px) {
-  .involucro {
-    display: flex;
-    flex-flow: column;
-  }
-
+@media (max-width: 480px) {
   .modal {
     width: 90%;
   }
-}
 
-@media screen and (max-width: 480px) {
   .involucro {
     display: flex;
     flex-flow: column;
   }
 
+  .title {
+    font-size: var(--tamanho-titulo-mobile);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
   .modal {
     width: 90%;
   }
-}
 
-@media screen and (max-width: 320px) {
   .involucro {
     display: flex;
     flex-flow: column;
+  }
+
+  .title {
+    font-size: var(--tamanho-titulo-tablet);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .title {
+    font-size: var(--tamanho-titulo);
   }
 }

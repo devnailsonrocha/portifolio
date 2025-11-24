@@ -14,7 +14,10 @@
 
   /*Titulos*/
 
-  --tamanho-titulo: 4rem;
+  --tamanho-titulo-mobile: 2rem;
+  --tamanho-titulo-tablet: 2.4rem;
+  --tamanho-titulo: 3rem;
+
   --corTitulo: #1c1c1c;
 
   /*Textos*/
